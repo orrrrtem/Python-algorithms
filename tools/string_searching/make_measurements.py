@@ -51,7 +51,10 @@ good_patterns = []
 good_texts = []
 bad_files = []
 good_files = []
-BENCH_DIR = '../../benchmarks'
+if len(sys.argv) < 2:
+    print('python make_measurements.py datasetsDIR')
+    exit()       
+BENCH_DIR = sys.argv[1]
 for i in range(1,5):
     bad_files.append('bad_t_' + str(i) +'.txt')
     good_files.append( 'good_t_' + str(i) +'.txt')
