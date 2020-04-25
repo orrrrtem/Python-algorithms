@@ -1,7 +1,8 @@
-#import sys
-#sys.path.append(sys.path[0] +  '/../')
-#print(sys.path)
-import os
+import os,sys,inspect
+currentdir = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe())))
+parentdir = os.path.dirname(currentdir)
+sys.path.insert(0,parentdir)
+
 from algorithms.string_searching.naive import naive
 from algorithms.string_searching.robin_carp import robin_carp
 from algorithms.string_searching.kmp import kmp
