@@ -13,7 +13,9 @@ Python algorithms for HSE PMI course
 
 Avaiable [tests](https://github.com/orrrrtem/Python-algorithms/blob/master/tests/test_string_searching.py) and [measurements](https://github.com/orrrrtem/Python-algorithms/tree/master/tools/string_searching) 
 
-Perfomance table: 
+[Graphs](https://github.com/orrrrtem/Python-algorithms/blob/master/tools/string_searching/image.png) for middle complexity dataset
+
+FULL Perfomance table: 
 
 |file|method      |mean      |median                |min                   |max                   |variance              |
 |----|------------|----------|----------------------|----------------------|----------------------|----------------------|
