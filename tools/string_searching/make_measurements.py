@@ -11,7 +11,7 @@ from time_metrics import *
 from algorithms.string_searching.naive import naive
 from algorithms.string_searching.robin_carp import robin_carp
 from algorithms.string_searching.kmp import kmp
-from algorithms.string_searching.bmh import 
+from algorithms.string_searching.bmh import bmh
 
 def get_time_df(num_iterations = 10, methods = [naive], len_cases = 4 ):
     time_total = pd.DataFrame(columns=['file', 'method', 'mean', 'median', 'min', 'max', 'variance'])
@@ -42,5 +42,5 @@ def get_time_df(num_iterations = 10, methods = [naive], len_cases = 4 ):
     return time_total
 
 all_methods = [naive, robin_carp, kmp, bmh]
-time_df = get_time_df(num_iterations=1000, methods = all_methods)
+time_df = get_time_df(num_iterations=100, methods = all_methods)
 time_df.to_csv('measurements')
