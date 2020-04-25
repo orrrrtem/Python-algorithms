@@ -72,4 +72,4 @@ all_methods = [naive, robin_carp, kmp, bmh]
 
 
 time_df = get_time_df(num_iterations=100, methods = all_methods)
-time_df.to_csv('measurements')
+time_df.to_csv('measurements.csv', index = False)
