@@ -1,7 +1,7 @@
-from algoritms.string_searching.naive import naive
-from algoritms.string_searching.robin_carp import robin_carp
-from algoritms.string_searching.kmp import kmp
-from algoritms.string_searching.bmh import bmh
+from algorithms.string_searching.naive import naive
+from algorithms.string_searching.robin_carp import robin_carp
+from algorithms.string_searching.kmp import kmp
+from algorithms.string_searching.bmh import bmh
 
 text_test = 'ohoh;oh Fuck, oh, oh fucj, Fuck Fuuuuck   shiiit oh'
 pattern_test = 'oh'
