@@ -18,7 +18,7 @@ Avaiable [tests](https://github.com/orrrrtem/Python-algorithms/blob/master/tests
 [Graphs](https://github.com/orrrrtem/Python-algorithms/blob/master/tools/string_searching/image.png) for middle complexity dataset
 ![Graphs for middle complexity dataset](https://github.com/orrrrtem/Python-algorithms/blob/master/tools/string_searching/image.png)
 
-FULL Perfomance table: 
+FULL Perfomance table obtained for 1000 iterations of each experiment: 
 
 |file|method      |mean      |median                |min                   |max                   |variance              |
 |----|------------|----------|----------------------|----------------------|----------------------|----------------------|
