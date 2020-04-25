@@ -41,6 +41,31 @@ def get_time_df(num_iterations = 10, methods = [naive], len_cases = 4 ):
             df_index += 2
     return time_total
 
+
+
+
 all_methods = [naive, robin_carp, kmp, bmh]
+bad_patterns = []
+bad_texts = []
+good_patterns = []
+good_texts = []
+bad_files = []
+good_files = []
+for i in range(1,5):
+    bad_files.append('bad_t_' + str(i) +'.txt')
+    good_files.append( 'good_t_' + str(i) +'.txt')
+
+    with open(BENCH_DIR + '/' + bad_files[-1], 'r') as file:
+        bad_texts.append(file.read())
+    with open(BENCH_DIR + '/bad_w_' + str(i) +'.txt', 'r') as file:
+        bad_patterns.append(file.read())
+    with open(BENCH_DIR + '/' +good_files[-1], 'r') as file:
+        good_texts.append(file.read())
+    with open(BENCH_DIR + '/bad_w_' + str(i) +'.txt', 'r') as file:
+        good_patterns.append(file.read())
+
+all_methods = [naive, robin_carp, kmp, bmh]
+
+
 time_df = get_time_df(num_iterations=100, methods = all_methods)
 time_df.to_csv('measurements')
