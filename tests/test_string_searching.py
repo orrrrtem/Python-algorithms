@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../')
 from algorithms.string_searching.naive import naive
 from algorithms.string_searching.robin_carp import robin_carp
 from algorithms.string_searching.kmp import kmp
