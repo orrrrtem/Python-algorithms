@@ -16,7 +16,7 @@ methods = [naive, robin_carp, kmp, bmh]
 
 for method in methods:
     if  answer  == method(pattern_test,text_test):
-          print(str(method.__name__),' pased')
+          print(str(method.__name__),' passed')
     else:
           print(str(method.__name__),' failed')
           print(str(method.__name__),' return ', method(pattern_test,text_test) , ' instead of ', answer)
